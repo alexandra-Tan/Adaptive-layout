@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container head-container">
+        <a class="logo" href="">
+          <span class="logo__acсent">Photo</span>Studio</a
+        >
+        <nav class="site-nav">
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link active" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:manki@mail.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./image/icons.svg#icon-envelope"></use>
+              </svg>
+              manki@mail.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+3802223344">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./image/icons.svg#icon-smartphone"></use>
+              </svg>
+              +3802223344
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <!-- hidden title -->
+        <!-- <h1>Портфолио</h1> -->
+        <div class="container">
+          <ul class="list-button list">
+            <li class="list-button__item">
+              <button class="list-button__buttons" type="button">Все</button>
+            </li>
+            <li class="list-button__item">
+              <button class="list-button__buttons" type="button">
+                Романтика
+              </button>
+            </li>
+            <li class="list-button__item">
+              <button class="list-button__buttons" type="button">
+                Праздник
+              </button>
+            </li>
+            <li class="list-button__item">
+              <button class="list-button__buttons" type="button">Работа</button>
+            </li>
+            <li class="list-button__item">
+              <button class="list-button__buttons" type="button">Семья</button>
+            </li>
+          </ul>
+
+          <ul class="list-portfolio list">
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/Романтика.jpg"
+                  alt="Влюбленные"
+                  width="370"
+                />
+
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Love story</h2>
+                <p class="list-portfolio__text">Романтика</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/photo_2022-05-24_19-41-52.jpg"
+                  alt="  костюм на модели"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Реклама</h2>
+                <p class="list-portfolio__text">Работа</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/корпаративы праздник.jpg"
+                  alt=" девушки копания"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Корпоратив</h2>
+                <p class="list-portfolio__text">Праздник</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/Свадьба.jpg"
+                  alt="жених и невеста"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Свадьба</h2>
+                <p class="list-portfolio__text">Романтика</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/2.jpg"
+                  alt="семья у елки"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Новый год</h2>
+                <p class="list-portfolio__text">Праздник</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/фуд фото2.jpg"
+                  alt="пирог"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Фуд Фото</h2>
+                <p class="list-portfolio__text">Работа</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/семья ребенок.jpg"
+                  alt="малыш"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Детский праздник</h2>
+                <p class="list-portfolio__text">Семья</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/деловая сьемка работа.jpg"
+                  alt="бизнес леди"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Деловая съемка</h2>
+                <p class="list-portfolio__text">Работа</p>
+              </div>
+            </li>
+
+            <li class="list-portfolio__item">
+              <div class="list-portfolio__thumb">
+                <img
+                  class="list-portfolio__img"
+                  src="./image/photo_2022-05-24_19-41-54.jpg"
+                  alt="семья"
+                  width="370"
+                />
+                <div class="list-portfolio__card">
+                  <p class="list-portfolio__animation-text">
+                    Love Story — это красивая и романтическая история любви,
+                    рассказанная в ярких фотографиях. В качестве сюжета для
+                    съемок вы можете выбрать какое-то важное событие, совместные
+                    увлечения или один день из вашей жизни.
+                  </p>
+                </div>
+              </div>
+              <div class="list-portfolio__box">
+                <h2 class="list-portfolio__title">Семейная съемка</h2>
+                <p class="list-portfolio__text">Семья</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <div class="footer-address">
+          <a class="logo footer__logo" href="">
+            <span class="logo__acсent">Photo</span>Studio</a
+          >
+
+          <address class="location">
+            г.Днепр1, ул.Шевченко,155
+            <a class="location__link" href="mailto:manki@mail.com"
+              >manki@mail.com</a
+            >
+            <a class="location__link" href="tel:+3802223344">+3802223344</a>
+          </address>
+        </div>
+
+        <div class="join">
+          <h2 class="join__title">Присоединяйтесь</h2>
+
+          <ul class="join__list list">
+            <li class="join__item">
+              <a class="join__link" href="">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./image/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="join__item">
+              <a class="join__link" href="">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./image/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="join__item">
+              <a class="join__link" href="">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="join__item">
+              <a class="join__link" href="">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./image/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-container">
+          <form class="form">
+            <b class="form__title">Подпишитесь на рассылку</b>
+
+            <label class="form__label" for="user_email"></label>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button class="form__button" type="submit">
+              Подписаться
+
+              <svg class="form__icon" width="24" height="24">
+                <use href="./image/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
