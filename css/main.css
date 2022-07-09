@@ -164,28 +164,56 @@ body {
 
 /* главный заголовок */
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/1500фотик.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/1500фотик.jpg);
-  background-color: var(--background-footer);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/главная\ десктоп1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/главная\ десктоп1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--background-footer);
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
 }
 
 .hero__title {
   color: var(--complementary-color);
+  font-size: 26px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 696px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 /* кнопка */
@@ -211,6 +239,11 @@ body {
 .benefits {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding: 94px 0;
+  }
+}
 
 .benefits__list {
   display: -webkit-box;
@@ -227,6 +260,11 @@ body {
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -249,6 +287,7 @@ body {
 .benefits__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -281,15 +320,10 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
+@media screen and (max-width: 1200px) {
+  .choose {
+    display: none;
+  }
 }
 
 .choose__img {
@@ -336,28 +370,59 @@ body {
 
 /* наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
   background-color: var(--background-team);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    text-align: center;
+  }
 }
 
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__item {
+  max-width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__item + .team__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__img {
   display: block;
+  max-width: 100%;
 }
 
 .team__box {
@@ -377,6 +442,7 @@ body {
 }
 
 .team__profession {
+  font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin-top: 0;
