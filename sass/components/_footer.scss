@@ -4,6 +4,18 @@
   padding-right: 15px;
   padding-left: 15px;
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 60px;
+    align-items: baseline;
+  }
 }
 
 footer {
@@ -13,7 +25,11 @@ footer {
 }
 
 .footer-address {
-  margin-right: 70px;
+  @media screen and (min-width: 1199px) {
+    margin-right: 70px;
+  }
+
+  text-align: center;
 }
 
 .location {
@@ -28,8 +44,14 @@ footer {
   display: block;
   margin-top: 9px;
   padding: 0;
+  text-decoration: none;
 }
 /* присоединяйтесь */
+.join {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
 
 .join__title {
   font-size: 14px;
@@ -43,6 +65,8 @@ footer {
 
 .join__list {
   display: flex;
+
+  justify-content: center;
 }
 
 .join__link {
@@ -71,35 +95,55 @@ footer {
 /* подписывайтесь */
 
 .form-container {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .form__title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--complementary-color);
   margin-bottom: 20px;
-  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  display: inline-block;
 }
 
 .form__input {
-  width: 358px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   height: 50px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-footer);
 
-  margin-right: 12px;
   padding-left: 16px;
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: inline-flex;
   align-items: center;
   letter-spacing: 0.03em;

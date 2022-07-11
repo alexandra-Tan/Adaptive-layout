@@ -14,22 +14,19 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1600px;
   }
 }
 
