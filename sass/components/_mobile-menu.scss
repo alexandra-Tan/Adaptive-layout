@@ -2,7 +2,7 @@
   position: absolute;
   top: 10px;
   right: 0;
-
+  z-index: 3;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -42,7 +42,7 @@
   position: absolute;
   justify-content: space-between;
   flex-direction: column;
-
+  z-index: 2;
   display: none;
 
   top: 0;
@@ -76,6 +76,9 @@
   &:focus {
     color: var(--color-accent);
   }
+  @media screen and (max-width: 320px) {
+    font-size: 35px;
+  }
 }
 
 .mobile-contacts {
@@ -92,6 +95,9 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--color-accent);
+  @media screen and (max-width: 320px) {
+    font-size: 26px;
+  }
 }
 .mobile-contacts__mail {
   font-weight: 500;
@@ -100,6 +106,10 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(----primary-text-color);
+
+  @media screen and (max-width: 320px) {
+    font-size: 18px;
+  }
 }
 
 .mobile-links {
@@ -112,6 +122,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--color-accent);
+  text-decoration: none;
+
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+  }
 }
 
 .mobile-links__item + .mobile-links__item {
