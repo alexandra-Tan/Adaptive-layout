@@ -118,7 +118,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:manki@mail.com">
               <svg class="contacts__icon" width="16" height="12">
-                <use href="./image/icons.svg#icon-envelope"></use>
+                <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               manki@mail.com
             </a>
@@ -126,7 +126,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380562223344">
               <svg class="contacts__icon" width="10" height="16">
-                <use href="./image/icons.svg#icon-smartphone"></use>
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +380562223344
             </a>
@@ -138,7 +138,7 @@
     <main>
       <section class="portfolio">
         <!-- hidden title -->
-        <!-- <h1>Портфолио</h1> -->
+        <h1 class="visually-hidden">Портфолио</h1>
         <div class="container">
           <ul class="list-button list">
             <li class="list-button__item">
@@ -166,34 +166,37 @@
 
           <ul class="list-portfolio list">
             <li class="list-portfolio__item">
-              <div class="list-portfolio__thumb">
-                <img
-                  srcset="
-                    ./images/portf-tablet_1.jpg    354w,
-                    ./images/portf-desk_1.jpg      370w,
-                    ./images/portf-mob_1.jpg       450w,
-                    ./images/portf-tablet_1@x2.jpg 708w,
-                    ./images/portf-desk_1@x2.jpg   740w,
-                    ./images/portf-mob_1@x2.jpg    900w
-                  "
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
-                  src="./images/portf-desk_1.jpg"
-                  alt="Картинка веб-сайта"
-                  class="list-portfolio__img"
-                />
+              <div class="list-portfolio__wrapper">
+                <div class="list-portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portf-tablet_1.jpg    354w,
+                      ./images/portf-desk_1.jpg      370w,
+                      ./images/portf-mob_1.jpg       450w,
+                      ./images/portf-tablet_1@x2.jpg 708w,
+                      ./images/portf-desk_1@x2.jpg   740w,
+                      ./images/portf-mob_1@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_1.jpg"
+                    alt="Картинка веб-сайта"
+                    class="list-portfolio__img"
+                  />
 
-                <div class="list-portfolio__card">
-                  <p class="list-portfolio__animation-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
+                  <div class="list-portfolio__card">
+                    <p class="list-portfolio__animation-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="list-portfolio__box">
-                <h2 class="list-portfolio__title">Технокряк</h2>
-                <p class="list-portfolio__text">Веб-сайт</p>
+                <div class="list-portfolio__box box-eliement">
+                  <h2 class="list-portfolio__title">Технокряк</h2>
+                  <p class="list-portfolio__text">Веб-сайт</p>
+                </div>
               </div>
             </li>
 

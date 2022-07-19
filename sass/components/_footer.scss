@@ -25,11 +25,13 @@ footer {
 }
 
 .footer-address {
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .location {

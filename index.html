@@ -116,7 +116,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:manki@mail.com">
               <svg class="contacts__icon" width="16" height="12">
-                <use href="./image/icons.svg#icon-envelope"></use>
+                <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               manki@mail.com
             </a>
@@ -124,7 +124,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380562223344">
               <svg class="contacts__icon" width="10" height="16">
-                <use href="./image/icons.svg#icon-smartphone"></use>
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +380562223344
             </a>
@@ -143,8 +143,8 @@
 
       <section class="benefits">
         <div class="container">
-          <!-- Скрытый заголовок секции
-           <h2>Преимущества</h2>  -->
+          <!-- Скрытый заголовок секции -->
+          <h2 class="visually-hidden">Преимущества</h2>
 
           <ul class="benefits__list list">
             <li class="benefits__item">
@@ -633,7 +633,7 @@
       <div class="modal">
         <button class="modal__close" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
-            <use href="./image/icons.svg#icon-close-black"></use>
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
 
@@ -652,7 +652,7 @@
             />
 
             <svg class="modal-form__icon" width="18" height="18">
-              <use href="./image/icons.svg#icon-person-black"></use>
+              <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
 
@@ -661,7 +661,7 @@
             <input class="modal-form__input" type="tel" name="tel" id="tel" />
 
             <svg class="modal-form__icon" width="18" height="18">
-              <use href="./image/icons.svg#icon-phone-black"></use>
+              <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </div>
 
@@ -675,7 +675,7 @@
             />
 
             <svg class="modal-form__icon" width="18" height="18">
-              <use href="./image/icons.svg#icon-email-black"></use>
+              <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
 
@@ -689,23 +689,25 @@
             placeholder="Введите текст"
           ></textarea>
 
-          <label class="modal-form__checkbox">
+          <label class="modal-form__checkbox-label">
             <input
-              class="modal-form__input-checkbox"
+              class="modal-form__input-checkbox visually-hidden"
               type="checkbox"
               name="confidential"
               value="agree"
             />
 
-            <span class="modal-form__span">
+            <span class="modal-form__container">
               <svg class="modal-form__icon-checkbox" width="16" height="15">
-                <use href="./image/icons.svg#icon-Vector"></use>
-              </svg>
-            </span>
+                <use
+                  class="modal-form__request"
+                  href="./images/icons.svg#icon-checkbox"
+                ></use>
 
-            <span class="modal-form__span-checkbox">
-              <svg class="modal-form__icon-blu" width="16" height="15">
-                <use href="./image/icons.svg#icon-icon-check"></use>
+                <use
+                  class="modal-form__checkbox"
+                  href="./images/icons.svg#icon-icon-check"
+                ></use>
               </svg>
             </span>
 
